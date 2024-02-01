@@ -6,10 +6,6 @@ import { Component } from '@angular/core';
   styleUrl: './card.component.scss'
 })
 export class CardComponent {
-  plano = {
-    infos: {
-      tipo: 'Simples',
-      preco: 'R$ 100,00',
-    },
-  };
+  // @ts-ignore
+  plano;
 }
