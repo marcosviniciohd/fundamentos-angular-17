@@ -1,5 +1,12 @@
 import { Component } from '@angular/core';
 
+interface Plano {
+  plano: string;
+  preco: string;
+}
+
+
+
 @Component({
   selector: 'app-card',
   templateUrl: './card.component.html',
@@ -7,5 +14,8 @@ import { Component } from '@angular/core';
 })
 export class CardComponent {
   // @ts-ignore
-  plano;
+  plano: Plano = {
+    plano: 'Simples',
+    preco: 'R$ 100,00',
+  };
 }
