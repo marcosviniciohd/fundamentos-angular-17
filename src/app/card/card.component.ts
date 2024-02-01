@@ -8,4 +8,8 @@ import { Component } from '@angular/core';
 export class CardComponent {
   tipo: string = 'Simples';
   valor: string = '100,00';
+
+  getFullPreco(): string {
+    return 'R$' + this.valor;
+  }
 }
