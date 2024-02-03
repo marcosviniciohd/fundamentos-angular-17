@@ -12,7 +12,7 @@ import { CardModule } from './card/card.module';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    CardModule
+    CardModule,
   ],
   providers: [
     provideClientHydration()
