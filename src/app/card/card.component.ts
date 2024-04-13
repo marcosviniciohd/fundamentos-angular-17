@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 
 interface Plano {
   plano: string;
@@ -13,9 +13,6 @@ interface Plano {
   styleUrl: './card.component.scss'
 })
 export class CardComponent {
-  // @ts-ignore
-  plano: Plano = {
-    plano: 'Simples',
-    preco: 'R$ 100,00',
-  };
+  @Input() planType: string = '';
+  @Input() planPrice: number = 0;
 }
